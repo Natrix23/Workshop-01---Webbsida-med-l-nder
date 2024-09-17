@@ -1,0 +1,66 @@
+body {
+    background-color:#24292e;
+    color: #fafbfc;
+    text-decoration: none; 
+    color: #fafbfc;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a { 
+    text-decoration: none; 
+    color: #fafbfc;
+    font-family: "Vollkorn", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.item1 { 
+    grid-area: header; 
+    text-align: center;
+}
+.item2 { 
+    grid-area: menu; 
+}
+.item3 { 
+    grid-area: main;
+    text-align: center;
+ }
+.item5 { 
+    grid-area: footer; 
+    text-align: center;
+}
+
+.country-link {
+    background-color: #24292e;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+img {
+    border-radius: 15px;
+}
+
+.country-name{
+    width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #2b3137;
+  padding: 20px 20px 20px 20px;
+  font-size: 30px;
+  border-radius: 15px;
+}
